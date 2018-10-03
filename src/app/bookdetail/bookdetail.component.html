@@ -1,0 +1,7 @@
+<div class="jumbotron" *ngIf="bookDetail" style="background-image: url({{bookDetail.thumbnail}}); background-size:cover; ">
+        <h1 class="display-4">{{bookDetail.title}}</h1>
+        <p class="lead" [innerHtml]=bookDetail.description></p>
+        <hr class="my-4">
+        <p></p>
+        <a class="btn btn-primary btn-lg" routerLink="../../library/{{bookDetail.id}}" role="button">Add to Library</a>
+      </div>
