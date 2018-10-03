@@ -8,7 +8,7 @@ import { Book } from './types/BookType';
 })
 export class BooksService {
   url: string = "https://www.googleapis.com/books/v1/volumes";
-  apiKey: string = "AIzaSyC16fSlBHai1j-qmI5sHfi3yRvvkzyUfYY"
+  apiKey: string = ""
   books: Array<Book> = [];
   constructor(private http: HttpClient) { }
 
